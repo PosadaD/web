@@ -1,0 +1,7 @@
+.ContentSection{
+    width: calc(100% - 355px);
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    padding-bottom: 0;
+}

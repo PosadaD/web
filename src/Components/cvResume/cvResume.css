@@ -1,0 +1,21 @@
+.cvContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--title-color);
+    width: 100%;
+    height: calc(90% - 11px);
+    position: relative;
+    overflow: hidden;
+}
+
+.cvContainer img{
+    width: 100%;
+    height: 100%;
+}
+
+#Mycanvas{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}

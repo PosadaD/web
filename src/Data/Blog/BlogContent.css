@@ -1,0 +1,3 @@
+.TextContainerblog h2, h3{
+    color: var(--title-color);
+}

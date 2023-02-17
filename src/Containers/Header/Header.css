@@ -1,0 +1,76 @@
+.OpacityMenu{
+    width: calc(100vw - 30px);
+    height: calc(100vh - 30px);
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: var(--bg-color-op);
+    animation-name: opacity;
+    animation-duration: 1s;
+}
+
+.headerContainer{
+    background-color: var(--box-color1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    transition-property: width;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    z-index: 3;
+}
+
+.navBar{
+    height: 70px;
+    width: 100%;
+    background-color: var(--box-color2);
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    font-size: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 10px 20px -10px;
+}
+
+.navBar div{
+    display: flex;
+    width: 75px;
+    justify-content: center;
+}
+
+.navBar svg{
+    transition-property: color, scale;
+    transition-duration: 100ms;
+}
+
+.navBar svg:hover{
+    color: var(--title-color);
+    scale: 1.1;
+}
+
+.nameBar{
+    height: calc(100% - 20vh - 70px);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    font-size: .8rem;
+    padding: 20px 0; 
+}
+
+.lenguajeChange{
+    height: 20vh;
+    max-height: 150px;
+    width: 100%;
+    background-color: var(--box-color2);
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px -10px 20px -10px;
+}
+
+@keyframes opacity{
+    0% {opacity: 0;}
+    40% {opacity: .4;}
+    100% {opacity: 1;}
+}

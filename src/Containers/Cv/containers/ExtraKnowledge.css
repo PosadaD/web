@@ -1,0 +1,15 @@
+.KnowledgeSection{
+    display: flex;
+    align-items: center;
+}
+
+.KnowledgeSection svg{
+    fill: var(--buttons-color);
+    margin-right: 10px;
+}
+
+.KnowledgeSection p{
+    color: var(--text-color);
+    font-size: 14px;
+    margin: 5px 0;
+}

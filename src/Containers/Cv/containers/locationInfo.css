@@ -1,0 +1,17 @@
+.locationContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.locationContainer h5{
+    color: var(--title-color);
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.locationContainer p{
+    margin: 0;
+    color: var(--text-color);
+    font-size: 14px;
+}

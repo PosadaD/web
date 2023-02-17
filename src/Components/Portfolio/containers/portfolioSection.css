@@ -1,0 +1,39 @@
+.containerSectionPort{
+    width: 31%;
+    min-width: 280px;
+    height: 350px;
+    margin: 10px;
+    display: flex;
+    align-items: flex-end;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.containerSectionPort:hover{
+    transform: scale(1.05);
+}
+
+.containerSectionPort:hover> .infoPort{
+    display: flex;
+}
+
+.infoPort{
+    padding: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bg-color-opLight);
+}
+
+.infoPort h3{
+    color: var(--title-color);
+    margin: 10px 0;
+}
+
+.infoPort p{
+    color: var(--text-color);
+    margin-top: 0;
+    font-size: 12px;
+}

@@ -1,0 +1,45 @@
+.containerSectioncomp{
+    width: 31%;
+    margin: 10px;
+    background-color: var(--box-color2);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.containerSectioncomp img{
+    width: 100%;
+    
+}
+
+.infoComp{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoComp h3{
+    color: var(--title-color);
+    margin: 10px 0;
+}
+
+.infoComp p{
+    color: var(--text-color);
+    margin-top: 0;
+    font-size: 12px;
+}
+
+.infoComp button{
+    background-color: var(--bg-center);
+    border: none;
+    height: 35px;
+    border-radius: 5px;
+    color: var(--title-color);
+}
+
+.infoComp button:hover{
+    background-color: var(--buttons-color);
+    transform: scale(1.1);
+    color: var(--bg-color);
+}

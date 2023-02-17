@@ -1,0 +1,66 @@
+.expandImgContainer{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--bg-color-op);
+    opacity: 1;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
+
+.popContainer{
+    width: 50%;
+    height: 80%;
+    background-color: var(--bg-center);
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.head{
+    width: 100%;
+    height: 10%;
+    background-color: var(--box-color1);
+    color: var(--text-color);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.head svg{
+    margin-right: 30px;
+    transform: scale(1.5);
+    transition: fill scale;
+    transition-duration: .5s;
+}
+
+.head svg:hover{
+    fill: var(--title-color);
+    scale: 1.1;
+}
+
+.img{
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+.img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

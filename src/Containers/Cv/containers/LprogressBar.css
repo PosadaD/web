@@ -1,0 +1,32 @@
+.LbarSection{
+    margin-bottom: 20px;
+}
+
+.lbarText{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.lbarText h5{
+    color: var(--title-color);
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+.lbarText p{
+    margin: 0;
+    color: var(--text-color);
+    font-size: 14px;
+}
+
+.LbarContainer{
+    width: 100%;
+    height: 5px;
+    background-color: var(--bg-color);
+}
+
+.bar{
+    background-color: var(--buttons-color);
+    height: 100%;
+}
