@@ -20,6 +20,8 @@
     transition-duration: 1s;
     transition-timing-function: ease;
     z-index: 3;
+    animation-name: opacity;
+    animation-duration: 1s;  
 }
 
 .navBar{
@@ -74,3 +76,4 @@
     40% {opacity: .4;}
     100% {opacity: 1;}
 }
+

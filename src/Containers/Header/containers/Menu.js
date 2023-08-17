@@ -11,7 +11,7 @@ function Menu(props){
     (
         <div className="menu">
             <ul className="menuList">
-                <li onClick={()=>{props.setTrigger(false); setTitle(Title => "HOME")}}><Link to={"/"}>HOME</Link></li>
+                <li onClick={()=>{props.setTrigger(false); setTitle(Title => "GAME")}}><Link to={"/"}>GAME</Link></li>
                 <li onClick={()=>{props.setTrigger(false); setTitle(Title => "BLOG")}}><Link to={"/blog"}>BLOG</Link></li>
                 <li onClick={()=>{props.setTrigger(false); setTitle(Title => "EXAMPLES & EXCERCISES")}}><Link to={"exex"}>EXAMPLES & EXCERCISES</Link></li>
                 <li onClick={()=>{props.setTrigger(false); setTitle(Title => "PORTFOLIO")}}><Link to={"portfolio"}>PORTFOLIO</Link></li>

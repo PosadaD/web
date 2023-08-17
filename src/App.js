@@ -1,9 +1,8 @@
 import "./App.css"
 import { BrowserRouter as Router, Route, Routes} from "react-router-dom";
 import Header from "./Containers/Header/Header"
-import Cv from "./Containers/Cv/Cv";
 import Footer from "./Containers/Footer/Footer"
-import Home from "./Components/cvResume/cvResume"
+import Game from "./Components/cvResume/cvResume"
 import Blog from "./Components/Blog/Blog"
 import ExEx from "./Components/Examples&Exercises/Examples&Ex"
 import Portfolio from "./Components/Portfolio/Portfolio"
@@ -11,16 +10,17 @@ import Competitive from "./Components/CompetitiveProg/Competitive"
 import BlogDetail from "./Components/Blog/components/blogDetail";
 import ExexDetail from "./Components/Examples&Exercises/component/ExDetails"
 import CompDetail from "./Components/CompetitiveProg/component/CompDetails"
+import Home from "./homePage/home";
 
 
 function App(){
   return(
     <Router>
-      <Cv />
         <div className="ComponentsSection">
 
           <Routes>
             <Route exact path="/" element={<Home />}/>
+            <Route exact path="/game" element={<Game />}/>
             <Route exact path="/blog" element={<Blog />}/>
             <Route path="blog/:blogId" element={<BlogDetail />}/> 
             <Route exact path="/exex" element={<ExEx />}/>
