@@ -14,6 +14,7 @@
     width: 100%;
     height: 100%;
     overflow-y: scroll;
+    scroll-snap-type: y mandatory;
     background-color: var(--bg-center);
     position: absolute;
     z-index: 5;
@@ -24,6 +25,7 @@
 .section{
     width: 100%;
     height: 100%;
+    scroll-snap-align: start;
 }
 
 .main{
@@ -72,14 +74,74 @@
 
 .mainsection1text{
     color: var(--text-color);
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     width: 80%;
     height: 50%;
 }
 
 
 .project1{
-    background-color: aquamarine;
+}
+
+.contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.contactsec{
+    height: 100%;
+}
+
+.contactsection1{
+    width: 60%;
+    padding-top: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.contactsection1Title{
+    width: 80%;
+    display: flex;
+    font-size: 1.2rem;
+    animation-name: opacity;
+    animation-duration: 1s;
+}
+
+.contactsection1Title h1{
+    color: var(--title-color);
+    margin-bottom: 0px;
+}
+
+.contactsection1Title :last-child{
+    color: var(--buttons-color);
+}
+
+.contactsection1Text{
+    width: 80%;
+}
+
+.contactsection1Text h4{
+    font-size: 1.2rem;
+}
+
+.contactsection1Text h1{
+    text-decoration: underline;
+    color: var(--text-color);
+}
+
+
+.contactsection2{
+    width: 40%;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.contactsection2 img{
+    width: 100%;
 }
 
 @keyframes opacity{
@@ -88,3 +150,8 @@
     100% {opacity: 1;}
 }
 
+@keyframes fade-up{
+    0% {top: 300;}
+    50% {top: 150;}
+    100% {top: 0;}
+}
