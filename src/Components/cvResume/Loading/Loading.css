@@ -1,0 +1,18 @@
+
+:root{
+    --bg-color: #001520;
+  }
+
+.loadingContainer{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.loadingContainer h4{
+    color: var(--bg-color);
+    font-size: 1.6rem;
+}

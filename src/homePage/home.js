@@ -5,6 +5,7 @@ import React from 'react';
 import Fade from 'react-reveal/Fade';
 import dogLeft from "./img/Dogleft-size.png"
 import Particle from "./components/particles";
+import {TbGuitarPickFilled} from "react-icons/tb"    
 
 
 
@@ -88,7 +89,7 @@ function Home(){
                             </div>
                         </div>
                         <div className="mainsec mainsection2">
-
+                            <TbGuitarPickFilled />
                         </div>
                     </div>
                     <div className="section project1">

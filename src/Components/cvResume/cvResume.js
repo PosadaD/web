@@ -1,4 +1,4 @@
-import {useEffect, useRef} from "react";
+import {useEffect, useRef, useState} from "react";
 import "./cvResume.css"
 import platformImg from "../../gameAssets/platform134.png"
 import tubo1 from "../../gameAssets/tubo1.png"
@@ -21,6 +21,7 @@ import soriteRunRight from "../../gameAssets/Run-right-01.png"
 import spriteStandLeft from "../../gameAssets/Idle-left-01.png"
 import spriteStandRight from "../../gameAssets/Idle-rigth-01.png"
 import playimg from "../../gameAssets/play.png"
+import Loading from "./Loading/Loading";
 //import misteryboxdoneimg from "../../gameAssets/misteryBoxDone.png"
 
 
@@ -29,9 +30,43 @@ import playimg from "../../gameAssets/play.png"
 function CvResume(){
 
     const canvasRef = useRef(null);
+    const [isLoading, setIsLoading] = useState(true);
+
 
 
     useEffect(()=> {
+
+
+
+    //Array of images to preload
+    const images = [platformImg, tubo1, tubo2, platform2Img, backgroundImg, misteryboximg, blockimg, block2img, block5img, ladder1img, ladder2img, ladder3img, ladder4img,ladder5img, ladder6img, ladder7img, spriteRunLeft, spriteStandRight, spriteStandLeft, soriteRunRight, playimg];
+
+    //Preload images
+    const preloadImages = () => {
+      return Promise.all(
+        images.map((image) => {
+          return new Promise((resolve, reject) => {
+            const img = new Image();
+            img.onload = resolve;
+            img.onerror = reject;
+            img.src = image;
+          });
+        })
+      );
+    };
+
+    preloadImages()
+      .then(() => {
+        console.log('All images preloaded successfully');
+        setIsLoading(previsLoading => previsLoading = false);
+      })
+      .catch((error) => {
+        console.error('Error preloading images:', error);
+        setIsLoading(true);
+      });
+
+
+
         const canva = canvasRef.current;
         const canvas = document.getElementById("Mycanvas")
         const c = canva.getContext("2d");
@@ -842,11 +877,7 @@ function CvResume(){
         }
 
         function animateplay(){
-            // window.addEventListener("load", function(){
-            //     plays.forEach(play => {
-            //         play.draw();
-            //     })
-            // })
+
             c.clearRect(0, 0, canvas.width, canvas.height);
             
             plays.forEach(play => {
@@ -855,10 +886,11 @@ function CvResume(){
         }
     
 
-        canvas.addEventListener('load', function(){
-            animateplay();
-        })
-        // animateplay();
+        // canvas.addEventListener('load', function(){
+        //     animateplay();
+        // })
+        animateplay();
+
         canvas.addEventListener("click", function(){
             c.clearRect(0, 0, canvas.width, canvas.height);
 
@@ -868,13 +900,21 @@ function CvResume(){
         })
 
 
-    },[]);
+    },[isLoading]);
 
 
     return(
         <section className="cvContainer">
-            <img src={playimg} alt=""></img>
-            <canvas ref={canvasRef} tabIndex="1" id="Mycanvas"></canvas>
+            {/* <img src={playimg} alt=""></img> */}
+            {isLoading ?
+                <>
+                    <Loading />
+                   <canvas ref={canvasRef} tabIndex="1" style={{display:"none"}} id="Mycanvas"></canvas>
+                </>
+            :
+                <canvas ref={canvasRef} tabIndex="1" id="Mycanvas"></canvas>
+            }
+            
         </section>
     )
     
