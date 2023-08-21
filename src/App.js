@@ -11,24 +11,30 @@ import BlogDetail from "./Components/Blog/components/blogDetail";
 import ExexDetail from "./Components/Examples&Exercises/component/ExDetails"
 import CompDetail from "./Components/CompetitiveProg/component/CompDetails"
 import Home from "./homePage/home";
+import ITA from "./Components/projects/ITA";
+import Py from "./Components/projects/Py"
+
 
 
 function App(){
   return(
     <Router>
         <div className="ComponentsSection">
-
-          <Routes>
-            <Route exact path="/" element={<Home />}/>
-            <Route exact path="/game" element={<Game />}/>
-            <Route exact path="/blog" element={<Blog />}/>
-            <Route path="blog/:blogId" element={<BlogDetail />}/> 
-            <Route exact path="/exex" element={<ExEx />}/>
-              <Route path="exex/:exexId" element={<ExexDetail />}/> 
-            <Route exact path="/portfolio" element={<Portfolio />}/>
-            <Route exact path="/competitive" element={<Competitive />}/>
-              <Route path="competitive/:compId" element={<CompDetail />}/>
-          </Routes>
+          <div className="contentSection">
+            <Routes>
+              <Route exact path="/" element={<Home />}/>
+              <Route exact path="/game" element={<Game />}/>
+              <Route exact path="/blog" element={<Blog />}/>
+                <Route path="blog/:blogId" element={<BlogDetail />}/> 
+              <Route exact path="/exex" element={<ExEx />}/>
+                <Route path="exex/:exexId" element={<ExexDetail />}/> 
+              <Route exact path="/portfolio" element={<Portfolio />}/>
+              <Route exact path="/competitive" element={<Competitive />}/>
+                <Route path="competitive/:compId" element={<CompDetail />}/>
+              <Route exact path="/ITA" element={<ITA />}/>
+              <Route exact path="/py" element={<Py />}/>
+            </Routes>
+          </div>
           <Footer />
         </div>
       <Header />

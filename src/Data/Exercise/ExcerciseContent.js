@@ -57,19 +57,30 @@ export function Ex2React(){
 
             <p><b>Note: All this exercises are from useState hook.</b></p>
 
-            <h3>Counter of items in a online shop</h3>
+            <h3 style={{marginTop:"100px"}}>Counter of items in a online shop</h3>
 
-            <p></p>
+            <p style={{width:"50%"}}>This exercise is based on the real need to determine the number of products in a shopping cart, since it is quite common for buyers to select more than one item and its quantity.</p>
 
-            <iframe title="counter_online_shop" src="./"></iframe>
+            <img src={require("../../ExImg/execommusesate.png")} alt=""></img>
 
-            <h3>Change of pokemon array</h3>
+            <h3 style={{marginTop:"100px"}}>Change of pokemon array</h3>
 
-            <p>esto es un elemento de codigo<code>var elemetn = 0;</code></p>
+            <p style={{width:"50%"}}>In this example we will use a video game as a reference to represent the lives of the characters, and thus, determine how much remaining life each one has after an attack and be able to determine a winner.</p>
 
-            <p></p>
+            <img src={require("../../ExImg/exgameusestate.png")} alt=""></img>
 
-            <h3>Meme generator</h3> 
+            <p>Link code:</p>
+            <a href="https://github.com/PosadaD/pokemon.git" style={{color:"white"}} target={"_blank"} rel="noreferrer">https://github.com/PosadaD/pokemon.git</a>
+
+
+            <h3 style={{marginTop:"100px"}}>Meme generator</h3> 
+
+            <p style={{width:"50%"}}>In this example we seek to use the state to change the display of those that are being chosen at random from an array internally and it becomes a graphical representation.</p>
+
+            <img src={require("../../ExImg/exmemeusestate.png")} alt=""></img>
+
+            <p>Link code:</p>
+            <a href="https://github.com/PosadaD/memeGenerator.git" style={{color:"white"}} target={"_blank"} rel="noreferrer">https://github.com/PosadaD/memeGenerator.git</a>
         </>
     )
 }

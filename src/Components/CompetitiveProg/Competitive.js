@@ -15,7 +15,7 @@ function Competitive(){
     })
 
     return(
-        <>
+        <div className="contentcontainer">
             <div className="seachContainerComp">
                 <div className="opacitycomp">
                     <input type="text" placeholder="  Search..."></input>
@@ -25,7 +25,7 @@ function Competitive(){
             <div className="containerComp">
                 {compSection}
             </div>
-        </>
+        </div>
     )
 }
 

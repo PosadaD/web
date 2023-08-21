@@ -89,10 +89,10 @@ export function Blog1React(){
             </ol>
             <br></br>
 
-            <h5>bibliografi:</h5>
-            <a target={"_blank"} href="https://www.javatpoint.com/pros-and-cons-of-react">https://www.javatpoint.com/pros-and-cons-of-react</a><br></br>
-            <a target={"_blank"} href="https://reactjs.org/docs/hooks-overview.html">https://reactjs.org/docs/hooks-overview.html</a><br></br>
-            <a target={"_blank"} href="https://webandcrafts.com/blog/react-js-features/">https://webandcrafts.com/blog/react-js-features/</a>
+            <h5 style={{marginBottom:"5px"}}>References:</h5>
+            <a target={"_blank"} style={{color:"white"}} href="https://www.javatpoint.com/pros-and-cons-of-react">https://www.javatpoint.com/pros-and-cons-of-react</a><br></br>
+            <a target={"_blank"} style={{color:"white"}} href="https://reactjs.org/docs/hooks-overview.html">https://reactjs.org/docs/hooks-overview.html</a><br></br>
+            <a target={"_blank"} style={{color:"white"}} href="https://webandcrafts.com/blog/react-js-features/">https://webandcrafts.com/blog/react-js-features/</a>
         </div>
     )
 }

@@ -34,4 +34,5 @@ body {
   display: flex;
   justify-content: flex-end;
   background-color: var(--bg-center);
+  overflow: hidden;
 }

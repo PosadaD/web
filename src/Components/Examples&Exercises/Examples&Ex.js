@@ -25,7 +25,7 @@ function ExamplesEx(){
 
 
     return(
-        <>
+        <div className="contentcontainer">
             <div className="seachContainerEx">
                 <div className="opacity">
                     <input type="text" placeholder="  Search..."></input>
@@ -38,7 +38,7 @@ function ExamplesEx(){
             <Swiper slidesPerView={3} spaceBetween={30} mousewheel={true} pagination={{clickable: true,}} modules={[Pagination, Mousewheel]} className="mySwiper">
                 {exSection}
             </Swiper>
-        </>
+        </div>
     )
 }
 

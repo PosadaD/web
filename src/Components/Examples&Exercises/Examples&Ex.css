@@ -1,3 +1,10 @@
+.contentcontainer{
+    width: 90%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .seachContainerEx{
     background-image: url(../../ExImg/portadaEx.jpg);
     background-repeat: no-repeat;
