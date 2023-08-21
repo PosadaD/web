@@ -10,8 +10,7 @@ function Menu(props){
     return(props.trigger) ?
     (
         <div className="menu">
-            <ul className="menuList">
-                <li onClick={()=>{props.setTrigger(false); setTitle(Title => "Home")}}><Link to={"/home"}>Home</Link></li>  
+            <ul className="menuList">  
                 <li onClick={()=>{props.setTrigger(false); setTitle(Title => "GAME")}}><Link to={"/game"}>GAME</Link></li>
                 <li onClick={()=>{props.setTrigger(false); setTitle(Title => "BLOG")}}><Link to={"/blog"}>BLOG</Link></li>
                 <li onClick={()=>{props.setTrigger(false); setTitle(Title => "EXAMPLES & EXCERCISES")}}><Link to={"exex"}>EXAMPLES & EXCERCISES</Link></li>

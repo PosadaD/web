@@ -22,9 +22,8 @@ function App(){
         <div className="ComponentsSection">
           <div className="contentSection">
             <Routes>
-              <Route exact path="*" element={<Home />}/>
+              <Route exact path="/" element={<Home />}/>
               <Route exact path="/web" element={<Home />}/>
-              <Route exact path="/home" element={<Home />}/>
               <Route exact path="/game" element={<Game />}/>
               <Route exact path="/blog" element={<Blog />}/>
                 <Route path="blog/:blogId" element={<BlogDetail />}/> 
