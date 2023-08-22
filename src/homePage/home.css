@@ -58,7 +58,7 @@
 }
 
 .mainsection1TitleName h1{
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     color: var(--title-color);
     margin-bottom: 0;
 }
@@ -68,7 +68,7 @@
 }
 
 .mainsection1Title h4{
-    font-size: 2rem;
+    font-size: 1.7rem;
     margin-top: 10px;
 }
 
@@ -259,6 +259,7 @@
 
 .contactsection2 img{
     width: 45%;
+    z-index: 1;
 }
 
 @keyframes opacity{

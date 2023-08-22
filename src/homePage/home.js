@@ -148,7 +148,7 @@ function Home(){
                         <div className="prosect prosection1">
                             <div className="textcontainer">
                                 <h1>Posada's website</h1>
-                                <p>his site was made with react. I created this project from scratch and part of its structure is designed with the purpose of provide information and data not only from the previous projects carried out, but also from the information that has been consulted through their elaboration, as well as points of view that I consider useful to know, exercises, examples or even competitive programming.</p>
+                                <p>This site was made with react. I created this project from scratch and part of its structure is designed with the purpose of provide information and data not only from the previous projects carried out, but also from the information that has been consulted through their elaboration, as well as points of view that I consider useful to know, exercises, examples or even competitive programming.</p>
                                 <Link to={"../py"}><button>More</button></Link>
                             </div>
                         </div>
